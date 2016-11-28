@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 		params.putString("khipu_account_name", "CUENTAPRUEBA");
 		params.putString("khipu_account_number", "123123123");
 		params.putString("khipu_alias", "CUENTAPRUEBA");
-		params.putString("payerName", "Emilio Davis");
-		params.putString("payerEmail", "demo@gmail.com");
+		params.putString("payer_name", "Emilio Davis");
+		params.putString("payer_email", "demo@gmail.com");
 		params.putString("khipu_rut", "12.345.678-9");
 		params.putString("khipu_email", "transferencias@khipu.com");
 
