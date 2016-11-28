@@ -20,8 +20,11 @@ public class Demo extends Application implements KhenshinApplication {
 		super();
 		khenshin = new Khenshin.KhenshinBuilder()
 				.setApplication(this)
-				.setAutomatonApiUrl("https://khipu.com/app/2.0/")
-				.setCerebroApiUrl("https://khipu.com/cerebro/")
+				.setAutomatonAPIUrl("https://cmr.browser2app.com/api/automata/")
+				.setCerebroAPIUrl("https://cmr.browser2app.com/api/automata/")
+				.setMainButtonStyle(Khenshin.CONTINUE_BUTTON_IN_FORM)
+				.setAllowCredentialsSaving(false)
+				.setHideWebAddressInformationInForm(true)
 				.build();
 	}
 
