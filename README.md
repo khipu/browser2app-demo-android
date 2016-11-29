@@ -32,7 +32,7 @@ Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados 
 
 Con los repositorios agregados puedes agregar el paquete khenshin a tu proyecto.
 
-    compile 'com.browser2app:khenshin:1.3.1'
+    compile 'com.browser2app:khenshin:1.3.2'
     
 ## Clase de tu aplicación
 
