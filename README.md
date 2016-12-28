@@ -32,7 +32,7 @@ Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados 
 
 Con los repositorios agregados puedes agregar el paquete khenshin a tu proyecto.
 
-    compile 'com.browser2app:khenshin:1.3.2'
+    compile 'com.browser2app:khenshin:1.4.0'
     
 ## Clase de tu aplicación
 
@@ -59,7 +59,7 @@ La clase principal de tu aplicación (la definida en el atributo android:name de
 					.setCerebroAPIUrl(CEREBRO_API_URL)
 					.setMainButtonStyle(Khenshin.CONTINUE_BUTTON_IN_FORM)
 					.setAllowCredentialsSaving(false)
-					.setHideWebAddressInformationInForm(true)
+					.setHideWebAddressInformationInForm(false)
 					.build();
 		}
 		
@@ -89,6 +89,20 @@ En tu proyecto puedes determinar los colores que usará Khenshin en las pantalla
 ## Vistas
 
 Para personalizar más aún la visualización de Khenshin puedes sobreescribir archivos de layout que se utilizan en el proceso de pago:
+
+
+### khenshin_toolbar_title.xml
+
+Este layout se usa en la barra de navegación en las páginas de salida (exito, fracaso o advertencia) y en las páginas del proceso si la barra del navegador está oculta.
+
+	<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/khenshin_toolbar_title">
+        <TextView
+            style="@style/khenshin_toolbar_title_text"
+            android:text="@string/app_name"
+        />
+    </LinearLayout>
 
 ### khenshin_process_header.xml
 
