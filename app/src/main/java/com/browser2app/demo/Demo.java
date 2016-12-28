@@ -24,7 +24,7 @@ public class Demo extends Application implements KhenshinApplication {
 				.setCerebroAPIUrl("https://cmr.browser2app.com/api/automata/")
 				.setMainButtonStyle(Khenshin.CONTINUE_BUTTON_IN_FORM)
 				.setAllowCredentialsSaving(false)
-				.setHideWebAddressInformationInForm(true)
+				.setHideWebAddressInformationInForm(false)
 				.build();
 	}
 
