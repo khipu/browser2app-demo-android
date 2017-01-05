@@ -23,7 +23,7 @@ public class Demo extends Application implements KhenshinApplication {
 				.setAutomatonAPIUrl("https://cmr.browser2app.com/api/automata/")
 				.setCerebroAPIUrl("https://cmr.browser2app.com/api/automata/")
 				.setMainButtonStyle(Khenshin.CONTINUE_BUTTON_IN_FORM)
-				.setAllowCredentialsSaving(false)
+				.setAllowCredentialsSaving(true)
 				.setHideWebAddressInformationInForm(false)
 				.build();
 	}
