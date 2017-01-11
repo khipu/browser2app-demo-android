@@ -12,5 +12,5 @@
         tools:context="com.browser2app.demo.MainActivity">
 
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Pay" android:onClick="doPay"/>
+            android:text="@string/pay" android:onClick="doPay"/>
 </LinearLayout>

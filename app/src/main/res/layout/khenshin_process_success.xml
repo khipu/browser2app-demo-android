@@ -14,17 +14,18 @@
                 style="@style/khenshin_dialog_title"/>
 
         <ImageView
-            android:id="@+id/exitImage"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/ic_transfer_ok"
-            android:paddingBottom="10dp"/>
+                android:id="@+id/exitImage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_transfer_ok"
+                android:paddingBottom="10dp"
+                android:contentDescription="@string/success"/>
 
         <TextView
-            android:id="@+id/message"
-            style="@style/khenshin_dialog_message"
-            />
+                android:id="@+id/message"
+                style="@style/khenshin_dialog_message"
+        />
 
         <Button android:id="@+id/nextButton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:text="@string/khenshinFinish" style="@style/khenshin_button"/>

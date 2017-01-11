@@ -6,5 +6,6 @@
             android:layout_height="?attr/actionBarSize"
             android:scaleType="fitCenter"
             android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/app_name"
     />
 </LinearLayout>
