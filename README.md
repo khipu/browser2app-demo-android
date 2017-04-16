@@ -26,7 +26,7 @@ Se debe incluir el [repositorio maven de khenshin](https://dev.khipu.com/nexus/c
 		}
 	}
 	
-Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados por tu ejecutivo Khenshin, se deben incluir en el archivo gradle.properties en la raiz del proyecto y sin incluir al sistema de control de versiones.
+Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados por tu ejecutivo Browser2app, se deben incluir en el archivo gradle.properties en la raiz del proyecto y sin incluir al sistema de control de versiones.
 
 ## Dependencias
 
@@ -68,7 +68,7 @@ La clase principal de tu aplicación (la definida en el atributo android:name de
 	}
 	
 	
-Los parámetros AUTOMATA_API_URL y CEREBRO_API_URL te serán proporcionados por tu ejecutivo Khenshin.
+Los parámetros AUTOMATA_API_URL y CEREBRO_API_URL te serán proporcionados por tu Browser2app.
 
 El parámetro MainButtonStyle puede tomar los valores Khenshin.CONTINUE_BUTTON_IN_FORM (El botón principal se pinta en bajo el formulario) o Khenshin.CONTINUE_BUTTON_IN_TOOLBAR (El botón principal se pinta en la barra de navegación).
 
@@ -365,7 +365,7 @@ El Id de pago se debe obtener luego de crear un pago [ver API de creación de pa
 	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	startActivityForResult(intent, START_PAYMENT_REQUEST_CODE);
 
-Tu ejecutivo Khenshin te informará las opciones para el ID_DE_AUTOMATA y los PARAM_1 a PARAM_N
+Tu ejecutivo Browser2app te informará las opciones para el ID_DE_AUTOMATA y los PARAM_1 a PARAM_N
 
 ## Respuesta
 
