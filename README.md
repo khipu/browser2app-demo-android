@@ -1,17 +1,20 @@
-# browser2app
+# Browser2app
 
-Browser2app es un servicio, provisto por khipu, que permite integrar flujos de trabajo web en aplicaciones nativas de Android e iOS con experiencia nativa sin hacer modificaciones al backend ni frontend existente. Por ejemplo, es posible que una app de compra integre todo el flujo de autorización de pago dentro de su app sin necesidad de enviar al usuario a autorizar el pago a un navegador o abrir un WebView.
+Browser2app es un servicio, provisto por khipu, que permite integrar flujos de trabajo web en aplicaciones nativas de Android e iOS con experiencia nativa sin hacer modificaciones al backend ni frontend existente. Por ejemplo, es posible que una app de compra integre todo el flujo de autorización de pago dentro de su app, sin necesidad de enviar al usuario a autorizar el pago a un navegador o abrir un WebView.
 
 El servicio se compone de tres partes.
 
-1. Biblioteca nativa (la versión actual se llama khenshin)
-2. Servidor de autómatas
+1. Biblioteca nativa, que debes integrar a tu app, existen versiones para iOS y para Android.
+2. Servidor de autómatas, que puede estar alojado en tus instalaciones o las nuestras.
 3. Servicio de configurción y mantención de autómatas.
 
-Si estas interesado en utilizar Browser2app en tu app, [contáctanos](mailto:soporte@khipu.com)
+
+![khenshin](khenshin.png)
 
 
-# Manual de uso la biblioteca nativa browser2app en Android (com.browser2app:khenshin:*) 
+Si estás interesado en utilizar Browser2app en tu app, [contáctanos](mailto:soporte@khipu.com)
+
+# Manual de uso la biblioteca nativa Browser2app en Android (com.browser2app:khenshin:*) 
 
 Esta aplicación ha sido creada para demostrar la utilización de nuestra biblioteca khenshin.
 Para poder ejecutar esta aplicación es necesario que tengas acceso a nuestro repositorio privado: https://dev.khipu.com/nexus/content/repositories/browser2app
@@ -23,7 +26,7 @@ Los pasos necesarios para utilizar la biblioteca nativa android para Browser2app
 3. [Modificar la clase base de tu app](#clase-de-tu-aplicación)
 4. [Configurar colores](#colores) y [vistas del proceso](#vistas)
 5. [Invocar browser2app desde tu app](#invocación)
-5. [Recibir la respuesta en tu app](#respuesta)
+6. [Recibir la respuesta en tu app](#respuesta)
 
 
 ## Repositorios
