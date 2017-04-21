@@ -16,6 +16,15 @@ Si estas interesado en utilizar Browser2app en tu app, [contáctanos](mailto:sop
 Esta aplicación ha sido creada para demostrar la utilización de nuestra biblioteca khenshin.
 Para poder ejecutar esta aplicación es necesario que tengas acceso a nuestro repositorio privado: https://dev.khipu.com/nexus/content/repositories/browser2app
 
+Los pasos necesarios para utilizar la biblioteca nativa android para Browser2app son:
+
+1. Agregar los repositorios
+2. Agregar las dependencias
+3. Modificar la clase base de tu app
+4. Configurar colores y vistas del proceso
+5. Invocar browser2app desde tu app
+
+
 ## Repositorios
 
 Se debe incluir el [repositorio maven de khenshin](https://dev.khipu.com/nexus/content/repositories/browser2app) así como jcenter y el repositorio del proyecto [dsl4xml](https://github.com/steveliles/dsl4xml)
