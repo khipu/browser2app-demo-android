@@ -18,7 +18,7 @@ Para poder ejecutar esta aplicación es necesario que tengas acceso a nuestro re
 
 Los pasos necesarios para utilizar la biblioteca nativa android para Browser2app son:
 
-1. Agregar los repositorios
+1. [Agregar los repositorios](#repositorios)
 2. Agregar las dependencias
 3. Modificar la clase base de tu app
 4. Configurar colores y vistas del proceso
