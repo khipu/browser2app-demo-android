@@ -8,6 +8,7 @@ El servicio se compone de tres partes.
 2. Servidor de autómatas, que puede estar alojado en tus instalaciones o las nuestras.
 3. Servicio de configurción y mantención de autómatas.
 
+En Browser2app existen varios niveles de configuración de la experiencia del usuario, algunos son controlados por el servidor de autómatas y se definen en la implementación del proyecto, otros se definen al momento de inicializar la biblioteca y finalmente otros se definen para cada instancia de una operación, la siguiente imágen muestra parte de los que se puede configurar.
 
 ![khenshin](khenshin.png)
 
