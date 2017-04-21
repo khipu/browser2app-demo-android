@@ -1,6 +1,17 @@
-# browser2app-demo-android
+# browser2app
 
-Version 2.0
+Browser2app es un servicio, provisto por khipu, que permite integrar flujos de trabajo web en aplicaciones nativas de Android e iOS con experiencia nativa sin hacer modificaciones al backend ni frontend existente. Por ejemplo, es posible que una app de compra integre todo el flujo de autorización de pago dentro de su app sin necesidad de enviar al usuario a autorizar el pago a un navegador o abrir un WebView.
+
+El servicio se compone de tres partes.
+
+1. Biblioteca nativa (la versión actual se llama khenshin)
+2. Servidor de autómatas
+3. Servicio de configurción y mantención de autómatas.
+
+Si estas interesado en utilizar Browser2app en tu app, [contáctanos](mailto:soporte@khipu.com)
+
+
+# Manual de uso la biblioteca nativa browser2app en Android (com.browser2app:khenshin:*) 
 
 Esta aplicación ha sido creada para demostrar la utilización de nuestra biblioteca khenshin.
 Para poder ejecutar esta aplicación es necesario que tengas acceso a nuestro repositorio privado: https://dev.khipu.com/nexus/content/repositories/browser2app
