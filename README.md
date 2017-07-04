@@ -7,15 +7,12 @@ Para poder ejecutar esta aplicación es necesario que tengas acceso a nuestro re
 
 ## Repositorios
 
-Se debe incluir el [repositorio maven de khenshin](https://dev.khipu.com/nexus/content/repositories/browser2app) así como jcenter y el repositorio del proyecto [dsl4xml](https://github.com/steveliles/dsl4xml)
+Se debe incluir el [repositorio maven de khenshin](https://dev.khipu.com/nexus/content/repositories/browser2app) así como jcenter
 
 
     allprojects {
 		repositories {
 			jcenter()
-			maven {
-				url 'http://steveliles.github.com/repository/'
-			}
 			maven {
 				url 'https://dev.khipu.com/nexus/content/repositories/browser2app'
 				credentials {
@@ -32,7 +29,7 @@ Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados 
 
 Con los repositorios agregados puedes agregar el paquete khenshin a tu proyecto.
 
-    compile 'com.browser2app:khenshin:1.8.7'
+    compile 'com.browser2app:khenshin:2.5.2'
     
 ## Clase de tu aplicación
 

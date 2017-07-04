@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 	public void doPay(View view) {
 		Intent intent = new Intent(MainActivity.this, StartPaymentActivity.class);
-		intent.putExtra(KhenshinConstants.EXTRA_AUTOMATON_ID, "Bawdf");
+		intent.putExtra(KhenshinConstants.EXTRA_AUTOMATON_ID, "dfFbF");
 		Bundle params = new Bundle();
 
 		params.putString("subject", "Prueba");
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 		params.putString("khipu_alias", "CUENTAPRUEBA");
 		params.putString("payer_name", "Emilio Davis");
 		params.putString("payer_email", "demo@gmail.com");
+		params.putString("useremail", "demo@gmail.com");
 		params.putString("khipu_rut", "12.345.678-9");
 		params.putString("khipu_email", "transferencias@khipu.com");
 

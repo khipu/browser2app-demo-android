@@ -3,7 +3,7 @@ buildscript {
 		jcenter()
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:2.2.0'
+		classpath 'com.android.tools.build:gradle:2.2.2'
 
 	}
 }
@@ -11,9 +11,6 @@ buildscript {
 allprojects {
 	repositories {
 		jcenter()
-		maven {
-			url 'http://steveliles.github.com/repository/'
-		}
 		maven {
 			url 'https://dev.khipu.com/nexus/content/repositories/browser2app'
 			credentials {
