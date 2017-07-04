@@ -1,9 +1,34 @@
-# browser2app-demo-android
+# Browser2app
 
-Version 2.0
+Browser2app es un servicio, provisto por khipu, que permite integrar flujos de trabajo web en aplicaciones nativas de Android e iOS con experiencia nativa sin hacer modificaciones al backend ni frontend existente. Por ejemplo, es posible que una app de compra integre todo el flujo de autorización de pago dentro de su app, sin necesidad de enviar al usuario a autorizar el pago a un navegador o abrir un WebView.
+
+El servicio se compone de tres partes.
+
+1. Biblioteca nativa, que debes integrar a tu app, existen versiones para iOS y para Android.
+2. Servidor de autómatas, que puede estar alojado en tus instalaciones o las nuestras.
+3. Servicio de configurción y mantención de autómatas.
+
+En Browser2app existen varios niveles de configuración de la experiencia del usuario, algunos son controlados por el servidor de autómatas y se definen en la implementación del proyecto, otros se definen al momento de inicializar la biblioteca y finalmente otros se definen para cada instancia de una operación, la siguiente imágen muestra parte de los que se puede configurar.
+
+![khenshin](khenshin.png)
+
+
+Si estás interesado en utilizar Browser2app en tu app, [contáctanos](mailto:soporte@khipu.com)
+
+# Manual de uso la biblioteca nativa Browser2app en Android (com.browser2app:khenshin:*) 
 
 Esta aplicación ha sido creada para demostrar la utilización de nuestra biblioteca khenshin.
 Para poder ejecutar esta aplicación es necesario que tengas acceso a nuestro repositorio privado: https://dev.khipu.com/nexus/content/repositories/browser2app
+
+Los pasos necesarios para utilizar la biblioteca nativa android para Browser2app son:
+
+1. [Agregar los repositorios](#repositorios)
+2. [Agregar las dependencias](#dependencias)
+3. [Modificar la clase base de tu app](#clase-de-tu-aplicación)
+4. [Configurar colores](#colores) y [vistas del proceso](#vistas)
+5. [Invocar browser2app desde tu app](#invocación)
+6. [Recibir la respuesta en tu app](#respuesta)
+
 
 ## Repositorios
 
@@ -23,7 +48,7 @@ Se debe incluir el [repositorio maven de khenshin](https://dev.khipu.com/nexus/c
 		}
 	}
 	
-Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados por tu ejecutivo Khenshin, se deben incluir en el archivo gradle.properties en la raiz del proyecto y sin incluir al sistema de control de versiones.
+Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados por tu ejecutivo Browser2app, se deben incluir en el archivo gradle.properties en la raiz del proyecto y sin incluir al sistema de control de versiones.
 
 ## Dependencias
 
@@ -65,7 +90,7 @@ La clase principal de tu aplicación (la definida en el atributo android:name de
 	}
 	
 	
-Los parámetros AUTOMATA_API_URL y CEREBRO_API_URL te serán proporcionados por tu ejecutivo Khenshin.
+Los parámetros AUTOMATA_API_URL y CEREBRO_API_URL te serán proporcionados por tu Browser2app.
 
 El parámetro MainButtonStyle puede tomar los valores Khenshin.CONTINUE_BUTTON_IN_FORM (El botón principal se pinta en bajo el formulario) o Khenshin.CONTINUE_BUTTON_IN_TOOLBAR (El botón principal se pinta en la barra de navegación).
 
@@ -362,7 +387,7 @@ El Id de pago se debe obtener luego de crear un pago [ver API de creación de pa
 	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	startActivityForResult(intent, START_PAYMENT_REQUEST_CODE);
 
-Tu ejecutivo Khenshin te informará las opciones para el ID_DE_AUTOMATA y los PARAM_1 a PARAM_N
+Tu ejecutivo Browser2app te informará las opciones para el ID_DE_AUTOMATA y los PARAM_1 a PARAM_N
 
 ## Respuesta
 
