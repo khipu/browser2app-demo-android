@@ -54,7 +54,7 @@ Los campos khenshinRepoUsername y khenshinRepoPassword te serán proporcionados 
 
 Con los repositorios agregados puedes agregar el paquete khenshin a tu proyecto.
 
-    compile 'com.browser2app:khenshin:2.5.2'
+    compile 'com.browser2app:khenshin:2.5.5'
     
 ## Clase de tu aplicación
 
@@ -77,11 +77,12 @@ La clase principal de tu aplicación (la definida en el atributo android:name de
 			super();
 			khenshin = new Khenshin.KhenshinBuilder()
 					.setApplication(this)
-					.setAutomatonAPIUrl(AUTOMATA_API_URL)
-					.setCerebroAPIUrl(CEREBRO_API_URL)
+					.setTaskAPIUrl(AUTOMATA_API_URL)
+					.setDumpAPIUrl(CEREBRO_API_URL)
 					.setMainButtonStyle(Khenshin.CONTINUE_BUTTON_IN_FORM)
 					.setAllowCredentialsSaving(false)
 					.setHideWebAddressInformationInForm(false)
+					.setSkipExitPage(false)
 					.build();
 		}
 		
@@ -97,6 +98,8 @@ El parámetro MainButtonStyle puede tomar los valores Khenshin.CONTINUE_BUTTON_I
 Con AllowCredentialsSaving se enciende o apaga la opción de recordar credenciales en el dispositivo.
 
 Con HideWebAddressInformationInForm se esconde la URL de navegación.
+
+Con SkipExitPage se puede evitar mostrar la página de término del proceso de autorización de pago, es útil si quieres controlar tu esa experiencia.
 
 
 ## Colores
@@ -362,7 +365,7 @@ Para iniciar un pago con Khenshin debes iniciar la actividad StartPaymentActivit
 	
 	...
 	
-	Intent intent = new Intent(MainActivity.this, StartPaymentActivity.class);
+	Intent intent = ((KhenshinApplication)getApplication()).getKhenshin().getStartTaskIntent();
 	intent.putExtra(KhenshinConstants.EXTRA_PAYMENT_ID, paymentId.getText().toString());  // ID DEL PAGO
 	intent.putExtra(KhenshinConstants.EXTRA_FORCE_UPDATE_PAYMENT, false); // NO FORZAR LA ACTUALIZACION DE DATOS
 	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // LIMPIAR EL STACK DE ACTIVIDADES

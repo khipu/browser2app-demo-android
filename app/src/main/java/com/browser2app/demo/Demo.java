@@ -26,6 +26,7 @@ public class Demo extends Application implements KhenshinApplication {
 				.setAllowCredentialsSaving(true)
 				.setHideWebAddressInformationInForm(false)
 				.setAutomatonTimeout(10)
+				.setSkipExitPage(false)
 				.build();
 	}
 
